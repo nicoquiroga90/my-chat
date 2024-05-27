@@ -11,6 +11,6 @@ export class AppController {
   ): Promise<any> {
     const { username, message } = body;
     await this.pusherService.trigger('chat', 'message', { username, message });
-    return [];
+    return "Message sent";
   }
 }
