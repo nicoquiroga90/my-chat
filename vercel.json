@@ -9,7 +9,7 @@
   "env": {
     "PUSHER_APP_ID": "1809148",
     "PUSHER_KEY": "eee8b3baf05b95a896c6",
-    "PUSHER_SECRET": "@281e042478084cacdb10",
+    "PUSHER_SECRET": "281e042478084cacdb10",
     "PUSHER_CLUSTER": "eu"
   }
 }
