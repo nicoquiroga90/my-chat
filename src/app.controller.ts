@@ -10,7 +10,7 @@ export class AppController {
     @Body() body: { username: string; message: string }
   ): Promise<any> {
     const { username, message } = body;
-    await this.pusherService.trigger('chat', 'message', { username, message });
+    await this.pusherService.trigger('my-chat', 'message', { username, message });
     return "Message sent";
   }
 }
