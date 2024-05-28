@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Get, Post, Header } from '@nestjs/common';
 import { PusherService } from './pusher.service';
 
 @Controller('api')
@@ -6,6 +6,7 @@ export class AppController {
   constructor(private pusherService: PusherService) {}
 
   @Post('messages')
+  @Header('Access-Control-Allow-Origin', 'https://my-chat-seven-phi.vercel.app')
   async messages(
     @Body() body: { username: string; message: string }
   ): Promise<any> {
