@@ -12,7 +12,10 @@
       "dest": "src/main.ts",
       "methods": [
         "POST"
-      ]
+      ],
+      "headers":{
+                "Access-Control-Allow-Origin": "*"
+            }
     }
   ]
 }
