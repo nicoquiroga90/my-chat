@@ -6,7 +6,7 @@ async function bootstrap() {
 
   app.enableCors({
     origin: 'https://my-chat-seven-phi.vercel.app',
-    methods: 'POST',
+    methods: ['POST', 'OPTIONS'],
     allowedHeaders: ['Content-Type'], 
     });
 
